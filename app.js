@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Mongoose connection
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://salitha:salitha123@ds111622.mlab.com:11622/node_api');
+mongoose.connect('mongodb://salitha:salitha94@ds111622.mlab.com:11622/node_api');
 const db = mongoose.connection;
 
 // Check for DB connection
