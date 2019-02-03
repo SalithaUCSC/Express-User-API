@@ -3,7 +3,7 @@ const express = require('express');
 // Initialize app
 const app = express();
 // Initialize port
-const port = 4000;
+const port = process.env.PORT || 5000;
 // Initialize paths
 const path = require('path');
 
@@ -45,5 +45,5 @@ app.get('/', function(req, res){
 })
 
 app.listen(port, function(){
-    console.log('server started at port ' + port);
+    console.log('server started...');
 })
